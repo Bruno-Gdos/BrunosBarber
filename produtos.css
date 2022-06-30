@@ -88,3 +88,17 @@ nav a:active {
   font-weight: bold;
   margin: 0 0 10px 0;
 }
+
+footer{
+  font: italic 10px/1.5 Georgia, serif;
+  color: white;
+  background-color: #212121;
+  background: url("icons/bg.jpg");
+  width: auto;
+  padding: 10px 0;
+  text-align: center;
+}
+
+footer img{
+  width: 14%;
+}
