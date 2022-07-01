@@ -1,4 +1,10 @@
+body,html{
+  height: 100%;
+  background: #000000;
+}
+
 header {
+  font-family: 'Oswald', sans-serif;
   background-color: #212121;
   padding: 20px 0;
   user-select: none;
@@ -10,7 +16,7 @@ header {
   width: 940px;
 }
 
-.caixa img{
+.caixa img {
   width: 25%;
 }
 
@@ -34,6 +40,7 @@ nav a {
   font-size: 22px;
   text-decoration: none;
   user-select: none;
+  transition: 0.6s color;
 }
 
 nav a:hover {
@@ -45,6 +52,7 @@ nav a:active {
 }
 
 .produtos {
+  color: black;
   width: 940px;
   margin: 0 auto;
   padding: 50px 0;
@@ -52,6 +60,7 @@ nav a:active {
 }
 
 .produtos li {
+  background-color: aliceblue;
   display: inline-block;
   text-align: center;
   vertical-align: top;
@@ -59,19 +68,20 @@ nav a:active {
   margin: 0 1.5%;
   padding: 30px 20px;
   box-sizing: border-box;
-  border: 2px solid #000000;
-  border-top-width: 10px;
+  border: 5px solid #3f3f3f;
+  filter: drop-shadow(0 0 0.3rem #ffff);
   border-radius: 10px;
+  transition: 1s;
 }
 
-.produtos li:hover{
+.produtos li:hover {
   border: 2px solid #a87b41;
   border-top-width: 10px;
   border-radius: 10px;
   padding: 35px 20px;
 }
 
-.produtos li:active{
+.produtos li:active {
   border: 2px solid #e89120;
   border-top-width: 10px;
   border-radius: 10px;
@@ -94,7 +104,7 @@ nav a:active {
   margin: 0 0 10px 0;
 }
 
-footer{
+footer {
   font: italic 10px/1.5 Georgia, serif;
   color: white;
   background-color: #212121;
@@ -105,8 +115,13 @@ footer{
   user-select: none;
 }
 
-footer img{
+footer img {
   width: 14%;
+}
+
+#contato{
+  
+
 }
 
 main {
@@ -114,39 +129,67 @@ main {
   margin: 0 auto;
 }
 
-form{
+
+form {
+  width: 100%;
+  background: #212121;
+  border: #3f3f3f 3px solid;
+  padding: 20px;
+  border-radius: 10px;
+  color: aliceblue;
   margin: 40px 0;
+  filter: drop-shadow(0 0 0.75rem #3f3f3f);
+  
 }
 
-form label{
+form label, form legend {
+  font-size: 17px;
   display: block;
   margin: 0 0 10px 0;
+  user-select: none;
 }
 
-form input{
+.input-padrao{
+  display: block;
+  width: 45%;
+  padding: 10px;
+  margin: 0 0 5px 0;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  user-select: none;
+
+}
+
+.input-padrao:focus{
+  outline: none;
+}
+
+.seletor{
+  display: block;
+  width: 10%;
+  padding: 10px;
+  margin: 0 0 5px 0;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  user-select: none;
+}
+
+
+.checkbox{
+  display: block;
+  width: 35%;
+  padding: 10px;
+  margin: 20px 0;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  user-select: none;
   
-  display: block;
-  width: 45%;
-  padding: 10px;
-  margin: 0 0 5px 0;
-  border: 1px solid #000000;
-  border-radius: 5px;
-  text-align: center;
+  
 }
 
-textarea{
+#submit {
   display: block;
-  width: 45%;
-  padding: 10px;
-  margin: 0 0 5px 0;
-  border: 1px solid #000000;
-  border-radius: 5px;
-  text-align: center;
-}
-
-#submit{
-  display: block;
-  width: 45%;
+  width: 30%;
   padding: 5px;
   margin: 0 0 5px 0;
   border: 1px solid #000000;
@@ -157,8 +200,89 @@ textarea{
   font-weight: bold;
   font-size: 22px;
   text-decoration: none;
+  transition: 1s;
+
 }
 
-#submit :hover{
-  background-color: #000000;
+#submit:hover {
+  background-color: #e89120;
+  filter: drop-shadow(0 0 0.2rem #ffffff);
+}
+
+legend{
+  padding-top: 15px;
+
+}
+
+table{
+  margin-top: 20px;
+
+}
+
+thead{
+  background-color: #a87b41;
+  color: white;
+  font-weight: bold;
+
+}	
+
+td,th{
+  border: 1px solid #a87b41;
+  padding: 5px;
+
+}
+
+.banner{
+  width: 100%;
+  margin: 0 auto;
+  user-select: none;
+  -webkit-filter: blur(10px); -moz-filter: blur(10px);
+  -o-filter: blur(10px); -ms-filter: blur(10px); 
+  filter: url(#blur); filter: blur(10px);  filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='3');
+  -webkit-transition: 2s -webkit-filter linear;
+  -o-transition: 2s -o-filter linear;
+}
+
+.banner:hover{
+  -webkit-filter: blur(0px); -moz-filter: blur(0px); -o-filter: blur(0px); -ms-filter: blur(0px);
+  filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='0'); filter: blur(0px);
+}
+
+.titulo-principal{
+  color: #a87b41;
+  text-align: center;
+  font-size: 2em;
+  font-weight: bold;
+  margin: 0 0 1em 0;
+  clear: left;
+  font-family: 'Great Vibes', cursive;
+  margin-top: 30px;
+}
+
+.principal{
+  color: aliceblue
+}
+
+.principal p{
+  margin: 0 0 1em 0;
+}
+
+.principal b{
+  font-weight: bold;
+}
+
+.principal i{
+  font-style: italic;
+}
+
+.imagembeneficios{
+  width: 60%;
+  user-select: none;
+}
+
+.utensilios{
+  margin: 0 20px 20px 0;
+  float: left;
+  width: 120px;
+  user-select: none;
 }

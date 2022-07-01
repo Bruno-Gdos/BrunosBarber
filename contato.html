@@ -7,13 +7,16 @@
     <link rel="stylesheet" href="reset.css" />
     <link rel="icon" type="image/png" href="icons/icone.png" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Oswald:wght@200;400&display=swap" rel="stylesheet">
   </head>
 
   <body>
     <header>
       <div class ="caixa">
         <h1>
-          <img src="icons/logo.png" class="img"/>
+          <img src="icons/logo.png" />
         </h1>
         <nav>
           <ul class="navegacao">
@@ -23,24 +26,70 @@
           </ul>
         </nav>
       </div>
-    </header>
+  </header>
 
     <main>
         <form>
-            <label for="nome">Nome e sobrenome:</label>
-            <input type="text" id="nome">
+            <label for="nome">* Nome e sobrenome:</label>
+            <input type="text" id="nome"class="input-padrao" required></input>
 
-            <label for="email">E-mail:</label>
-            <input type="email" id="email">
+            <label for="email">* E-mail:</label>
+            <input type="email" id="email"class="input-padrao" required placeholder="seuemail@dominio.com"></input>
 
-            <label for=""telefone">Telefone:</label>
-            <input type="text" id="telefone">
+            <label for="telefone">* Telefone:</label>
+            <input type="tel" id="telefone"class="input-padrao" required placeholder="(xx) xxxxx-xxxx"> </input>
 
-            <label for="mensagem">Mensagem:</label>
-            <textarea id="mensagem" cols="58" rows="10"></textarea>
+            <label for="mensagem">* Mensagem:</label>
+            <textarea id="mensagem" cols="58" rows="10"class="input-padrao" required placeholder="Descreva o motivo do seu contato..."></textarea>
+          <fieldset>
+            <legend>Como prefere o nosso contato?</legend>
+            <label for="ratio-email"><input type="radio" id="ratio-email" name="contato" value="email" checked >E-mail</label>
+          
+
+            <label for="ratio-telefone"> <input type="radio" id="ratio-telefone" name="contato" value="telefone">Telefone</label>
+           
+
+            <label for="ratio-whatsapp"> <input type="radio" id="ratio-whatsapp" name="contato" value="whatsapp">Whatsapp</label>
+           
+          </fieldset>
+
+          <fieldset>
+            <legend>* Qual horario prefere ser atendido?</legend>
+            <select name="assunto" id="assunto" class="seletor">
+              <option value="1">Manhã</option>
+              <option value="2">Tarde</option>
+              <option value="3">Noite</option>
+            </fieldset>
+          </select>
+            <label class="checkbox"><input type="checkbox" checked> Gostaria de receber novidades por E-mail? </input></label>
 
             <input type="submit" value="Enviar" id="submit">
         </form>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Dia</th>
+              <th>Horário</th>
+            </tr>
+         </thead>
+
+          <tbody>
+            <tr>
+              <td>Segunda</td>
+              <td>08:00 ~ 20:00</td>
+            </tr>
+            <tr>
+              <td>Quarta</td>
+              <td>08:00 ~ 20:00</td>
+            </tr>
+            <tr>
+              <td>Sexta</td>
+              <td>06:00 ~ 18:00</td>
+            </tr>
+          </tbody>
+        </table>
+        
 
     </main>
 
