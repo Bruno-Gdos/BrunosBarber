@@ -1,11 +1,11 @@
 body,html{
   height: 100%;
-  background: #000000;
+  background: #212121;
 }
 
 header {
   font-family: 'Oswald', sans-serif;
-  background-color: #212121;
+  background-color: #181818;
   padding: 20px 0;
   user-select: none;
 }
@@ -18,6 +18,15 @@ header {
 
 .caixa img {
   width: 25%;
+  transition: 0.5s;
+  
+}
+
+.caixa img:hover{
+  
+  filter: drop-shadow(2px 4px 1px #a87b41);
+  
+  
 }
 
 nav {
@@ -107,24 +116,27 @@ nav a:active {
 footer {
   font: italic 10px/1.5 Georgia, serif;
   color: white;
-  background-color: #212121;
-  background: url("icons/bg.jpg");
+  background-color:  #181818;
   width: auto;
   padding: 10px 0;
   text-align: center;
   user-select: none;
+  clear: both;
 }
 
 footer img {
   width: 14%;
+  transition: 0.5s;
 }
 
-#contato{
-  
-
+footer img:hover{
+  filter: drop-shadow(2px 4px 1px #a87b41);
 }
 
-main {
+
+
+
+.contato {
   width: 940px;
   margin: 0 auto;
 }
@@ -139,6 +151,7 @@ form {
   color: aliceblue;
   margin: 40px 0;
   filter: drop-shadow(0 0 0.75rem #3f3f3f);
+  
   
 }
 
@@ -249,6 +262,7 @@ td,th{
 }
 
 .titulo-principal{
+  
   color: #a87b41;
   text-align: center;
   font-size: 2em;
@@ -256,15 +270,25 @@ td,th{
   margin: 0 0 1em 0;
   clear: left;
   font-family: 'Great Vibes', cursive;
+  padding: 3px 0 ;
   margin-top: 30px;
+  border: 2px solid #a87b41;
+  border-radius: 10px;
+  background-color:   #212121;
 }
 
+
+
+
 .principal{
+  width: 940px;
+  margin: 0 auto;
   color: aliceblue
+  
 }
 
 .principal p{
-  margin: 0 0 1em 0;
+  margin: 0 0 0.5em 0;
 }
 
 .principal b{
@@ -275,9 +299,50 @@ td,th{
   font-style: italic;
 }
 
-.imagembeneficios{
+.beneficios{
+  padding: 2em 0;
+  background-color: #3f3f3f;
+  background: linear-gradient( #212121,#000000, #212121);
+ 
+}
+
+.beneficios h3, .mapa h3{
+  width: 940px;
+  margin: 0 auto;
+}
+
+.conteudo-beneficios{
+  
+  width: 640px ;
+  margin: 0 auto;
+  padding: 2em;
+  
+}
+
+
+.imagem-beneficios{
   width: 60%;
-  user-select: none;
+  box-shadow: #373737 10px 10px 5px;
+}
+
+.lista{
+  width: 40%;
+  display: inline-block;
+  vertical-align: top;
+  line-height: 1.5em;
+}
+
+.itens{
+  color: aliceblue;
+}
+
+.itens::before{
+  content: "•";
+  margin: 0 0.5em;
+}
+
+.itens:hover{
+  font-weight: bold;
 }
 
 .utensilios{
@@ -285,4 +350,101 @@ td,th{
   float: left;
   width: 120px;
   user-select: none;
+}
+
+.mapa{
+  padding-top: 3em;
+background: linear-gradient( #212121,#000000 ,#212121);
+
+}
+
+
+.mapa-conteudo{
+   width: 940px;
+  margin: 0 auto;
+  padding: 2em 0;
+  
+}
+
+.mapa p{
+  padding-top: 2em;
+  margin: 0 0 1em;
+  color: aliceblue;
+  text-align: center;
+}
+
+.video{
+  width: 600px;
+  margin: 1em auto;
+  box-shadow: #373737 10px 10px 5px;
+}
+
+@media screen and (max-width:480px) {
+  .caixa, .principal , .conteudo-beneficios, .mapa-conteudo, .video , .mapa, .produtos, .contato{
+    width: auto;
+  }
+  h1{
+    text-align: center;
+  }
+
+  nav{
+    position: static;
+    text-align: center;
+  }
+  .beneficios h3, .mapa h3{
+    width: auto;
+  }
+  .lista{
+    width: 100%;
+    padding-bottom: 1em;
+  }
+  .imagem-beneficios{
+    width: 100%;
+  }
+  .itens{
+    display: block;
+    text-align: center;
+  }
+
+  .produtos li{
+    background-color: aliceblue;
+    display: block;
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    border: 5px solid #3f3f3f;
+    filter: drop-shadow(0 0 0.3rem #ffff);
+    border-radius: 10px;
+    transition: 1s;
+  }
+
+  .produtos{
+    width: 100%;
+    margin: 0 auto;
+    padding: 2em 0;
+  }
+
+  .contato {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  form {
+    width: 90%;
+    background: #212121;
+    border: #3f3f3f 3px solid;
+    padding: 20px;
+    border-radius: 10px;
+    color: aliceblue;
+    margin: 40px 0;
+    filter: drop-shadow(0 0 0.75rem #3f3f3f);
+    
+    
+  }
+  
+  form label, form legend {
+    margin: 0 0 10px 0;
+    user-select: none;
+  }
 }
