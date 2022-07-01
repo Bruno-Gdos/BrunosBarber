@@ -1,0 +1,99 @@
+#banner {
+  width: 100%;
+}
+
+.imagembeneficios {
+  width: 50%;
+}
+
+.principal {
+  background-color: #cccc;
+  padding: 30px;
+}
+
+.beneficios {
+  background-color: #fff;
+  padding: 20px;
+}
+
+.itens {
+  font-style: italic;
+  background-color: white;
+  display: inline-block;
+  vertical-align: top;
+  width: 20%;
+  margin-right: 15%;
+}
+
+p {
+  text-align: center;
+}
+
+#paragrafo {
+  font-size: 20px;
+}
+
+.titulo-centralizado {
+  text-align: center;
+}
+
+i b {
+  color: #ff0000;
+}
+
+header {
+  background-color: #212121;;
+  padding: 20px 0;
+}
+
+header img{
+    width: 25%;
+}
+
+.caixa {
+  position: relative;
+  margin: 0 auto;
+  width: 940px;
+}
+
+nav {
+  position: absolute;
+  top: 110px;
+  right: 0;
+}
+
+nav li {
+  display: inline;
+  margin: 0 0 0 15px;
+}
+
+nav a {
+  text-transform: uppercase;
+  color: white;
+  font-weight: bold;
+  font-size: 22px;
+  text-decoration: none;
+}
+
+nav a:hover {
+    color: #a87b41;
+  }
+  
+  nav a:active {
+    color: #e89120;
+  }
+
+  footer{
+    font: italic 10px/1.5 Georgia, serif;
+    color: white;
+    background-color: #212121;
+    background: url("icons/bg.jpg");
+    width: auto;
+    padding: 10px 0;
+    text-align: center;
+  }
+  
+  footer img{
+    width: 14%;
+  }
+  
