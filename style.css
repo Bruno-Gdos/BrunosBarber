@@ -1,6 +1,7 @@
 header {
   background-color: #212121;
   padding: 20px 0;
+  user-select: none;
 }
 
 .caixa {
@@ -17,11 +18,13 @@ nav {
   position: absolute;
   top: 110px;
   right: 0;
+  user-select: none;
 }
 
 nav li {
   display: inline;
   margin: 0 0 0 15px;
+  user-select: none;
 }
 
 nav a {
@@ -30,6 +33,7 @@ nav a {
   font-weight: bold;
   font-size: 22px;
   text-decoration: none;
+  user-select: none;
 }
 
 nav a:hover {
@@ -44,6 +48,7 @@ nav a:active {
   width: 940px;
   margin: 0 auto;
   padding: 50px 0;
+  user-select: none;
 }
 
 .produtos li {
@@ -97,6 +102,7 @@ footer{
   width: auto;
   padding: 10px 0;
   text-align: center;
+  user-select: none;
 }
 
 footer img{

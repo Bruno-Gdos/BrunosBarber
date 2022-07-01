@@ -44,6 +44,7 @@ i b {
 header {
   background-color: #212121;;
   padding: 20px 0;
+  user-select: none;
 }
 
 header img{
@@ -95,5 +96,6 @@ nav a:hover {
   
   footer img{
     width: 14%;
+    user-select: none;
   }
   
